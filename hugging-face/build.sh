@@ -1,3 +1,6 @@
 #!/usr/bin/env sh
 
-docker build -t vevc/fml .
+IMAGE="ghcr.io/Josephini/jack/lunar"
+TAG="latest"
+
+docker build -t $IMAGE:$TAG .
