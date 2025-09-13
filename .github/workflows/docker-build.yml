@@ -39,8 +39,8 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v5
         with:
-          context: .
-          file: ./Dockerfile
+          context: ./hugging-face          # 👈 上下文改为子目录
+          file: ./hugging-face/Dockerfile # 👈 Dockerfile 路径
           push: true
           tags: |
             ghcr.io/${{ env.OWNER_LC }}/jack/lunar:latest
