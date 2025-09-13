@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-IMAGE="ghcr.io/Josephini/jack/lunar"
+IMAGE="ghcr.io/josephini/jack/lunar"
 TAG="latest"
 
 docker build -t $IMAGE:$TAG .
