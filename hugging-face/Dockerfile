@@ -17,10 +17,8 @@ RUN apt-get update; \
 
 FROM ubuntu:22.04
 
-LABEL org.opencontainers.image.source="https://github.com/vevc/one-node"
-
 ENV TZ=Asia/Shanghai \
-    UUID=2584b733-9095-4bec-a7d5-62b473540f7a \
+    UUID=dcefee68-29a8-49a0-9339-cd28bf284efb \
     DOMAIN=vevc-fml.hf.space
 
 COPY entrypoint.sh /entrypoint.sh
